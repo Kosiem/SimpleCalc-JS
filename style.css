@@ -1,0 +1,145 @@
+*{
+    font-family: 'Dosis';
+}
+body{
+    background-color: #c5d5cb;
+    background-attachment: fixed;
+}
+main{
+
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.calculator-window{
+
+    background-color: #BD1E51;
+    color:white;
+    font-size: 200%;;
+    text-align: center;
+    border: 5px solid #f0e9e9;
+    align-self:center;
+    width: 20%;
+    margin-bottom: 5%;
+    font-weight: bold;
+    transition: all
+    
+}
+
+.result{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.action, .number{
+    padding:5%;
+    flex-basis: 33%;
+    font-size: 150%;
+    border-collapse: collapse;
+    background-color: #f0e9e9;
+    border: 2px solid black;
+}
+.action {
+    background-color: #BD1E51;
+    color:white;
+    font-weight: bold;
+    border-radius: 10%;
+    padding:10%;
+}
+.number{
+ background-color: #e3e0cf;
+ padding:10%;
+ font-weight: bold;
+ color:black;
+ border-radius: 10%;
+}
+.number[value="0"]{
+    border: 2px solid black;
+}
+.action:hover{
+    position:relative;
+    width: auto;
+    color:black;
+    border-radius:10px;
+    background-color: #e3e0cf;
+    text-align:center;
+    padding:16px 18px 14px;
+    transition: all 0.1s;
+    box-shadow: 0px 6px 0px #BD1E51;
+}
+
+.number:hover{
+    position:relative;
+    width: auto;
+    color:white;
+    border-radius:10px;
+    background-color:#BD1E51;
+    text-align:center;
+    padding:16px 18px 14px;
+    transition: all 0.1s;
+    box-shadow: 0px 6px 0px  #e3e0cf;
+}
+
+.sum{
+    flex:1;
+    padding:10%;
+    font-size: 150%;
+    border-collapse: collapse;
+    background-color: #f0e9e9;
+}
+.calculator-buttons{
+    display:flex;
+    width: 20%;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.memory{
+    font-size: 50%;
+    margin-left: 2%;
+}
+
+#summ{
+    flex:1;
+}
+
+@media only screen and (max-width:1070px){
+    .calculator-buttons{
+        flex-basis:33%;
+        flex-flow: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .number{
+        background-color: #e3e0cf;
+        font-weight: bold;
+        color:black;
+        border-radius: 10%;
+       }
+       .number:hover{
+        position:relative;
+        width: auto;
+        color:white;
+        border-radius:10px;
+        background-color: #BD1E51;
+        text-align:center;
+        padding:16px 18px 14px;
+        transition: all 0.1s;
+        box-shadow: 0px 6px 0px #e3e0cf;
+    }
+    .action {
+        background-color: #BD1E51;
+        color:white;
+        font-weight: bold;
+        border-radius: 10%;
+    
+    }
+} 
